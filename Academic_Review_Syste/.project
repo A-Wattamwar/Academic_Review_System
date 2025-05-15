@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Academic_Review_Syste</name>
+	<n>Academic_Review_System</n>
 	<comment></comment>
 	<projects>
 	</projects>
 	<buildSpec>
 		<buildCommand>
-			<name>org.eclipse.jdt.core.javabuilder</name>
+			<n>org.eclipse.jdt.core.javabuilder</n>
 			<arguments>
 			</arguments>
 		</buildCommand>
