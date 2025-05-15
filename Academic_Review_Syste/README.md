@@ -1,49 +1,11 @@
 # Academic Review System (ARS)
 
-## Change Log
-- Added reviewer profile management system
-- Implemented automated reviewer scorecard
-- Created admin request tracking system
-- Enhanced database schema
-- Added new UI components
-- Implemented comprehensive testing
-- Integrated user account management system
-
 ## Overview
 The Academic Review System (ARS) is a comprehensive JavaFX application designed to facilitate academic paper reviews and feedback among students, reviewers, and administrators. This platform streamlines the review process, maintains quality control through reviewer scorecards, and provides administrators with tools to manage the entire system.
 
 The system features a robust User Account Management System with role-based access control and secure authentication to ensure proper permissions and data security throughout the application.
 
-This phase implements four major epics:
-1. User Account Management
-2. Reviewer Profile Management
-3. Reviewer Scorecard System
-4. Admin Request Management System
-
-## Technical Details
-
-### Architecture
-- **Design Pattern**: MVC (Model-View-Controller) architecture
-- **Database**: H2 embedded database with comprehensive schema for users, reviews, feedback, and requests
-- **UI**: JavaFX-based interface with responsive design and dynamic gradient backgrounds
-- **Security**: Password protection and role-based access control (Admin, Student, Reviewer, Instructor, Staff)
-- **Modularity**: Component-based design allowing for easy extension
-
-### Built With
-- Java (JDK 11+)
-- JavaFX 17 - GUI framework
-- H2 Database - Embedded database
-- JUnit 5 - Testing framework
-- CSS - UI styling
-
-### Database Schema
-The system utilizes multiple database helpers to manage different aspects of the application:
-- **DatabaseHelper**: User accounts, authentication, and invitation code management
-- **DatabaseHelper2**: Questions, answers, and educational content
-- **DatabaseHelper3**: Reviews, feedback, and reviewer profiles
-- **DatabaseHelper4**: Admin requests and system management
-
-## Features
+## Key Features
 
 ### 1. User Account Management System
 - Role-based access control (Admin, Student, Reviewer, Instructor, Staff roles)
@@ -82,15 +44,57 @@ The system utilizes multiple database helpers to manage different aspects of the
 - Priority levels and assignment capabilities
 - Notification system for status changes
 
-## Testing
-- Comprehensive JUnit tests in `Phase4AutomatedTests.java`.
+## Technical Architecture
+
+### System Architecture
+- **Design Pattern**: MVC (Model-View-Controller) architecture
+- **Database**: H2 embedded database with comprehensive schema
+- **UI**: JavaFX-based interface with responsive design and dynamic gradient backgrounds
+- **Security**: Password protection and role-based access control
+- **Modularity**: Component-based design allowing for easy extension
+
+### Database Design
+The system utilizes multiple database helpers to manage different aspects:
+- **DatabaseHelper**: User accounts, authentication, and invitation code management
+- **DatabaseHelper2**: Questions, answers, and educational content
+- **DatabaseHelper3**: Reviews, feedback, and reviewer profiles
+- **DatabaseHelper4**: Admin requests and system management
+
+### Class Structure
+The application includes several key object models:
+- **User**: Base class with role-specific extensions
+- **Review**: Manages paper review content and metadata
+- **Question/Answer**: Educational content management
+- **Feedback**: Student responses to reviewer performance
+- **Request**: Admin-level system management requests
+
+### UML Diagrams
+Detailed UML diagrams are available in the Design_Documents directory:
+- Flow diagrams showing system interaction
+- Database helper class diagrams
+- Entity relationship diagrams for key components
+- Class hierarchies and dependencies
+
+## Technologies Used
+- Java (JDK 11+)
+- JavaFX 17 - GUI framework
+- H2 Database - Embedded database
+- JUnit 5 - Testing framework
+- CSS - UI styling
+
+## Testing Framework
+- Comprehensive JUnit tests organized in test packages:
+  1. src/test/Phase1AutomatedTests.java
+  2. src/test/Phase2AutomatedTests.java
+  3. src/test/Phase3AutomatedTests.java
+  4. src/test/Phase4AutomatedTests.java
 - Manual testing of UI components with documented test cases
 - Database operation validation with data integrity checks
 - Integration testing between components
 - Performance testing for database operations
 - Edge case testing for error handling
 
-## How to Run
+## Installation and Setup
 
 ### Prerequisites
 - Eclipse IDE (2021 or newer recommended)
@@ -103,10 +107,10 @@ The system utilizes multiple database helpers to manage different aspects of the
 
 1. Clone the Repository:
 ```bash
-git clone https://github.com/sohamd22/Team_Project_Repo.git
+git clone https://github.com/A-Wattamwar/Academic_Review_System.git
 ```
 
-2. Import the TP4 project
+2. Import the Academic_Review_System project
 
 3. Configure Build Path:
    - Right-click on the project
@@ -147,12 +151,22 @@ git clone https://github.com/sohamd22/Team_Project_Repo.git
    - Right-click on `src/test/Phase4AutomatedTests.java`
    - Select "Run As" -> "JUnit Test"
    - Note: Ensure database is reset (Step 6) before running tests
+   - The same way you can also run other PhaseAutomationTests.
 
 ## System Requirements
 - Minimum 4GB RAM
 - 100MB free disk space
 - 1280x720 screen resolution or higher
 - Internet connection not required (uses embedded database)
+
+## Recent Updates
+- Added reviewer profile management system
+- Implemented automated reviewer scorecard
+- Created admin request tracking system
+- Enhanced database schema
+- Added new UI components
+- Implemented comprehensive testing
+- Integrated user account management system
 
 
 
