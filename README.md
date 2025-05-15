@@ -168,5 +168,8 @@ git clone https://github.com/A-Wattamwar/Academic_Review_System.git
 - Implemented comprehensive testing
 - Integrated user account management system
 
+## Documentation
+To access the comprehensive JavaDoc documentation, open `index.html` at `Academic_Review_System/doc/index.html`.
+
 
 
