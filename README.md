@@ -5,6 +5,9 @@ The Academic Review System (ARS) is a comprehensive JavaFX application designed 
 
 The system features a robust User Account Management System with role-based access control and secure authentication to ensure proper permissions and data security throughout the application.
 
+## Author
+Ayush Sachin Wattamwar
+
 ## Key Features
 
 ### 1. User Account Management System
