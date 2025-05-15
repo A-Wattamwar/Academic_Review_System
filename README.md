@@ -84,10 +84,10 @@ Detailed UML diagrams are available in the Design_Documents directory:
 
 ## Testing Framework
 - Comprehensive JUnit tests organized in test packages:
-  1. src/test/Phase1AutomatedTests.java
-  2. src/test/Phase2AutomatedTests.java
-  3. src/test/Phase3AutomatedTests.java
-  4. src/test/Phase4AutomatedTests.java
+  1. `src/test/Phase1AutomatedTests.java`
+  2. `src/test/Phase2AutomatedTests.java`
+  3. `src/test/Phase3AutomatedTests.java`
+  4. `src/test/Phase4AutomatedTests.java`
 - Manual testing of UI components with documented test cases
 - Database operation validation with data integrity checks
 - Integration testing between components
